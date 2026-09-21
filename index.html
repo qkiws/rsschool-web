@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Lab</title>
+
+    <link rel="icon" href="favicon/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__container">
+
+        <a class="logo" href="index.html">
+            Coffee Lab
+        </a>
+
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#about">About</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#coffee">Coffee</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#advantages">Advantages</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#reviews">Reviews</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a class="navigation__link" href="catalog.html">Catalog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__actions">
+
+            <button class="theme-button" type="button" aria-label="Change theme">
+                ☀
+            </button>
+
+            <button class="burger-button" type="button" aria-label="Open menu">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="hero" id="hero">
+        <div class="container hero__container">
+
+            <div class="hero__content">
+
+                <p class="hero__subtitle">
+                    Specialty Coffee
+                </p>
+
+                <h1 class="hero__title">
+                    Coffee made with passion
+                </h1>
+
+                <p class="hero__text">
+                    Discover carefully selected coffee beans,
+                    freshly roasted and prepared especially for you.
+                </p>
+
+                <a class="button hero__button" href="catalog.html">
+                    Explore our coffee
+                </a>
+
+            </div>
+
+            <div class="hero__image">
+                <img
+                    src="images/hero.jpg"
+                    alt="A cup of freshly brewed coffee"
+                >
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-heading__subtitle">
+                    About us
+                </p>
+
+                <h2 class="section-heading__title">
+                    More than just coffee
+                </h2>
+            </div>
+
+            <div class="about__content">
+
+                <div class="about__image">
+                    <img
+                        src="images/about.jpg"
+                        alt="Coffee beans and coffee equipment"
+                    >
+                </div>
+
+                <div class="about__text">
+                    <p>
+                        Coffee Lab is a small coffee project created
+                        for people who appreciate quality coffee and
+                        a comfortable atmosphere.
+                    </p>
+
+                    <p>
+                        We carefully select our beans and work with
+                        experienced roasters to create a unique taste
+                        in every cup.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="coffee" id="coffee">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-heading__subtitle">
+                    Our selection
+                </p>
+
+                <h2 class="section-heading__title">
+                    Popular coffee
+                </h2>
+            </div>
+
+            <div class="slider">
+
+                <button
+                    class="slider__button slider__button--prev"
+                    type="button"
+                    aria-label="Previous slide"
+                >
+                    ←
+                </button>
+
+                <div class="slider__content">
+
+                    <article class="coffee-card">
+                        <img
+                            src="images/coffee-1.jpg"
+                            alt="Espresso coffee"
+                        >
+
+                        <div class="coffee-card__content">
+                            <h3>Espresso</h3>
+
+                            <p>
+                                Rich and intense classic coffee
+                                with a deep aroma.
+                            </p>
+
+                            <span class="coffee-card__price">
+                                $3.50
+                            </span>
+                        </div>
+                    </article>
+
+
+                    <article class="coffee-card">
+                        <img
+                            src="images/coffee-2.jpg"
+                            alt="Cappuccino coffee"
+                        >
+
+                        <div class="coffee-card__content">
+                            <h3>Cappuccino</h3>
+
+                            <p>
+                                Smooth espresso with steamed milk
+                                and delicate foam.
+                            </p>
+
+                            <span class="coffee-card__price">
+                                $4.50
+                            </span>
+                        </div>
+                    </article>
+
+
+                    <article class="coffee-card">
+                        <img
+                            src="images/coffee-3.jpg"
+                            alt="Latte coffee"
+                        >
+
+                        <div class="coffee-card__content">
+                            <h3>Latte</h3>
+
+                            <p>
+                                A soft combination of espresso
+                                and creamy steamed milk.
+                            </p>
+
+                            <span class="coffee-card__price">
+                                $4.80
+                            </span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <button
+                    class="slider__button slider__button--next"
+                    type="button"
+                    aria-label="Next slide"
+                >
+                    →
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="advantages" id="advantages">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-heading__subtitle">
+                    Why Coffee Lab
+                </p>
+
+                <h2 class="section-heading__title">
+                    What makes us special
+                </h2>
+            </div>
+
+            <div class="advantages__list">
+
+                <article class="advantage">
+                    <div class="advantage__icon">
+                        ☕
+                    </div>
+
+                    <h3>Fresh coffee</h3>
+
+                    <p>
+                        Our beans are freshly roasted and carefully
+                        prepared for every order.
+                    </p>
+                </article>
+
+
+                <article class="advantage">
+                    <div class="advantage__icon">
+                        🌱
+                    </div>
+
+                    <h3>Quality beans</h3>
+
+                    <p>
+                        We choose high-quality beans from different
+                        coffee-growing regions.
+                    </p>
+                </article>
+
+
+                <article class="advantage">
+                    <div class="advantage__icon">
+                        ❤️
+                    </div>
+
+                    <h3>Made with care</h3>
+
+                    <p>
+                        Every cup is prepared with attention to
+                        taste and quality.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-heading__subtitle">
+                    Reviews
+                </p>
+
+                <h2 class="section-heading__title">
+                    What our visitors say
+                </h2>
+            </div>
+
+            <div class="reviews__list">
+
+                <article class="review">
+                    <p class="review__text">
+                        "So bad, the worst i'v ever drink"
+                    </p>
+
+                    <h3 class="review__author">
+                        Anna
+                    </h3>
+                </article>
+
+
+                <article class="review">
+                    <p class="review__text">
+                        "The coffee is not delicious and the staff
+                        is very thug."
+                    </p>
+
+                    <h3 class="review__author">
+                        Daniel
+                    </h3>
+                </article>
+
+
+                <article class="review">
+                    <p class="review__text">
+                        "A perfect place to smoke with a decent cup
+                        of coffee."
+                    </p>
+
+                    <h3 class="review__author">
+                        Michael
+                    </h3>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container footer__container">
+
+        <div class="footer__info">
+            <a class="logo" href="index.html">
+                Coffee Lab
+            </a>
+
+            <p>
+                Specialty coffee for every day.
+            </p>
+        </div>
+
+        <div class="footer__contacts">
+            <h3>Contact</h3>
+
+            <a href="tel:+1234567890">
+                +1 234 567 890
+            </a>
+
+            <a
+                href="https://maps.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Our location
+            </a>
+        </div>
+
+        <div class="footer__social">
+            <h3>Follow us</h3>
+
+            <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer__bottom">
+        <p>
+            © 2026 Coffee Lab
+        </p>
+    </div>
+</footer>
+
+
+<script src="js/theme.js"></script>
+
+</body>
+</html>

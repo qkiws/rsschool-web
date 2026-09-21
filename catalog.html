@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Lab — Catalog</title>
+
+    <link rel="icon" href="favicon/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__container">
+
+        <a class="logo" href="index.html">
+            Coffee Lab
+        </a>
+
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html#about">
+                        About
+                    </a>
+                </li>
+
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html#coffee">
+                        Coffee
+                    </a>
+                </li>
+
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html#advantages">
+                        Advantages
+                    </a>
+                </li>
+
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html#reviews">
+                        Reviews
+                    </a>
+                </li>
+
+                <li class="navigation__item">
+                    <a class="navigation__link" href="catalog.html">
+                        Catalog
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__actions">
+
+            <button class="theme-button" type="button" aria-label="Change theme">
+                ☀
+            </button>
+
+            <button class="burger-button" type="button" aria-label="Open menu">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="catalog">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-heading__subtitle">
+                    Our menu
+                </p>
+
+                <h1 class="section-heading__title">
+                    Coffee Catalog
+                </h1>
+
+                <p class="section-heading__description">
+                    Explore our selection of coffee, tea and desserts.
+                </p>
+            </div>
+
+
+            <div class="catalog__categories">
+
+                <button
+                    class="category-button category-button--active"
+                    type="button"
+                >
+                    Coffee
+                </button>
+
+                <button
+                    class="category-button"
+                    type="button"
+                >
+                    Tea
+                </button>
+
+                <button
+                    class="category-button"
+                    type="button"
+                >
+                    Desserts
+                </button>
+
+            </div>
+
+
+            <div class="catalog__grid">
+
+                <article class="product-card">
+                    <img
+                        src="images/coffee-1.jpg"
+                        alt="Espresso"
+                    >
+
+                    <div class="product-card__content">
+                        <h2>Espresso</h2>
+
+                        <p>
+                            Strong and aromatic classic coffee.
+                        </p>
+
+                        <span>$3.50</span>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <img
+                        src="images/coffee-2.jpg"
+                        alt="Cappuccino"
+                    >
+
+                    <div class="product-card__content">
+                        <h2>Cappuccino</h2>
+
+                        <p>
+                            Espresso with steamed milk and foam.
+                        </p>
+
+                        <span>$4.50</span>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <img
+                        src="images/coffee-3.jpg"
+                        alt="Latte"
+                    >
+
+                    <div class="product-card__content">
+                        <h2>Latte</h2>
+
+                        <p>
+                            Smooth coffee with creamy milk.
+                        </p>
+
+                        <span>$4.80</span>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <img
+                        src="images/coffee-4.jpg"
+                        alt="Americano"
+                    >
+
+                    <div class="product-card__content">
+                        <h2>Americano</h2>
+
+                        <p>
+                            Espresso diluted with hot water.
+                        </p>
+
+                        <span>$3.80</span>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <img
+                        src="images/coffee-5.jpg"
+                        alt="Flat White"
+                    >
+
+                    <div class="product-card__content">
+                        <h2>Flat White</h2>
+
+                        <p>
+                            Rich espresso with silky milk foam.
+                        </p>
+
+                        <span>$4.70</span>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <img
+                        src="images/coffee-6.jpg"
+                        alt="Mocha"
+                    >
+
+                    <div class="product-card__content">
+                        <h2>Mocha</h2>
+
+                        <p>
+                            Coffee combined with chocolate and milk.
+                        </p>
+
+                        <span>$5.00</span>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <img
+                        src="images/coffee-7.jpg"
+                        alt="Macchiato"
+                    >
+
+                    <div class="product-card__content">
+                        <h2>Macchiato</h2>
+
+                        <p>
+                            Espresso topped with a small amount of milk.
+                        </p>
+
+                        <span>$4.20</span>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <img
+                        src="images/coffee-8.jpg"
+                        alt="Cold Brew"
+                    >
+
+                    <div class="product-card__content">
+                        <h2>Cold Brew</h2>
+
+                        <p>
+                            Smooth cold coffee with a refreshing taste.
+                        </p>
+
+                        <span>$5.20</span>
+                    </div>
+                </article>
+
+            </div>
+
+
+            <button class="load-more" type="button">
+                Load more
+            </button>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container footer__container">
+
+        <div class="footer__info">
+            <a class="logo" href="index.html">
+                Coffee Lab
+            </a>
+
+            <p>
+                Specialty coffee for every day.
+            </p>
+        </div>
+
+        <div class="footer__contacts">
+            <h3>Contact</h3>
+
+            <a href="tel:+1234567890">
+                +1 234 567 890
+            </a>
+
+            <a
+                href="https://maps.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Our location
+            </a>
+        </div>
+
+        <div class="footer__social">
+            <h3>Follow us</h3>
+
+            <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer__bottom">
+        <p>
+            © 2026 Coffee Lab
+        </p>
+    </div>
+</footer>
+
+
+<script src="js/theme.js"></script>
+
+</body>
+</html>
