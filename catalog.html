@@ -69,13 +69,13 @@
     </div>
 </header>
 
-
 <main>
 
     <section class="catalog">
         <div class="container">
 
             <div class="section-heading">
+
                 <p class="section-heading__subtitle">
                     Our menu
                 </p>
@@ -87,14 +87,15 @@
                 <p class="section-heading__description">
                     Explore our selection of coffee, tea and desserts.
                 </p>
-            </div>
 
+            </div>
 
             <div class="catalog__categories">
 
                 <button
                     class="category-button category-button--active"
                     type="button"
+                    data-category="coffee"
                 >
                     Coffee
                 </button>
@@ -102,6 +103,7 @@
                 <button
                     class="category-button"
                     type="button"
+                    data-category="tea"
                 >
                     Tea
                 </button>
@@ -109,162 +111,20 @@
                 <button
                     class="category-button"
                     type="button"
+                    data-category="desserts"
                 >
                     Desserts
                 </button>
 
             </div>
 
+            <div class="catalog__grid" id="catalog-grid"></div>
 
-            <div class="catalog__grid">
-
-                <article class="product-card">
-                    <img
-                        src="images/coffee-1.jpg"
-                        alt="Espresso"
-                    >
-
-                    <div class="product-card__content">
-                        <h2>Espresso</h2>
-
-                        <p>
-                            Strong and aromatic classic coffee.
-                        </p>
-
-                        <span>$3.50</span>
-                    </div>
-                </article>
-
-
-                <article class="product-card">
-                    <img
-                        src="images/coffee-2.jpg"
-                        alt="Cappuccino"
-                    >
-
-                    <div class="product-card__content">
-                        <h2>Cappuccino</h2>
-
-                        <p>
-                            Espresso with steamed milk and foam.
-                        </p>
-
-                        <span>$4.50</span>
-                    </div>
-                </article>
-
-
-                <article class="product-card">
-                    <img
-                        src="images/coffee-3.jpg"
-                        alt="Latte"
-                    >
-
-                    <div class="product-card__content">
-                        <h2>Latte</h2>
-
-                        <p>
-                            Smooth coffee with creamy milk.
-                        </p>
-
-                        <span>$4.80</span>
-                    </div>
-                </article>
-
-
-                <article class="product-card">
-                    <img
-                        src="images/coffee-4.jpg"
-                        alt="Americano"
-                    >
-
-                    <div class="product-card__content">
-                        <h2>Americano</h2>
-
-                        <p>
-                            Espresso diluted with hot water.
-                        </p>
-
-                        <span>$3.80</span>
-                    </div>
-                </article>
-
-
-                <article class="product-card">
-                    <img
-                        src="images/coffee-5.jpg"
-                        alt="Flat White"
-                    >
-
-                    <div class="product-card__content">
-                        <h2>Flat White</h2>
-
-                        <p>
-                            Rich espresso with silky milk foam.
-                        </p>
-
-                        <span>$4.70</span>
-                    </div>
-                </article>
-
-
-                <article class="product-card">
-                    <img
-                        src="images/coffee-6.jpg"
-                        alt="Mocha"
-                    >
-
-                    <div class="product-card__content">
-                        <h2>Mocha</h2>
-
-                        <p>
-                            Coffee combined with chocolate and milk.
-                        </p>
-
-                        <span>$5.00</span>
-                    </div>
-                </article>
-
-
-                <article class="product-card">
-                    <img
-                        src="images/coffee-7.jpg"
-                        alt="Macchiato"
-                    >
-
-                    <div class="product-card__content">
-                        <h2>Macchiato</h2>
-
-                        <p>
-                            Espresso topped with a small amount of milk.
-                        </p>
-
-                        <span>$4.20</span>
-                    </div>
-                </article>
-
-
-                <article class="product-card">
-                    <img
-                        src="images/coffee-8.jpg"
-                        alt="Cold Brew"
-                    >
-
-                    <div class="product-card__content">
-                        <h2>Cold Brew</h2>
-
-                        <p>
-                            Smooth cold coffee with a refreshing taste.
-                        </p>
-
-                        <span>$5.20</span>
-                    </div>
-                </article>
-
-            </div>
-
-
-            <button class="load-more" type="button">
+            <button
+                class="load-more"
+                id="load-more"
+                type="button"
+            >
                 Load more
             </button>
 
@@ -273,6 +133,65 @@
 
 </main>
 
+<div class="modal" id="product-modal">
+
+    <div class="modal__overlay"></div>
+
+    <div
+        class="modal__content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+    >
+
+        <button
+            class="modal__close"
+            id="modal-close"
+            type="button"
+            aria-label="Close modal"
+        >
+            ×
+        </button>
+
+        <div class="modal__image-wrapper">
+
+            <img
+                class="modal__image"
+                id="modal-image"
+                src=""
+                alt=""
+            >
+
+        </div>
+
+        <div class="modal__info">
+
+            <p class="modal__category" id="modal-category"></p>
+
+            <h2
+                class="modal__title"
+                id="modal-title"
+            ></h2>
+
+            <p class="modal__summary" id="modal-summary"></p>
+
+            <p
+                class="modal__description"
+                id="modal-description"
+            ></p>
+
+            <div class="modal__options" id="modal-options"></div>
+
+            <div class="modal__price-row">
+                <span>Total</span>
+                <div class="modal__price" id="modal-price"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 <footer class="footer">
     <div class="container footer__container">
@@ -334,6 +253,10 @@
 
 
 <script src="js/theme.js"></script>
+<script src="js/burger.js"></script>
+<script src="js/products.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/catalog.js"></script>
 
 </body>
 </html>
